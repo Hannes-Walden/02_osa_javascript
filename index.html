@@ -244,8 +244,89 @@
       console.log(etunimi + sukunimi);
 
 
-      //05. FUNKTIOT
+      // 05. FUNKTIOT
+      // FUNKTIO JA NUOLIFUNKTIO
+      //Tavallinen funktio.
+      function sum1(a, b) {
+        return a + b;
+      }
+
+      //Sama nuolifunktiona.
+      const sum2 = (a, b) => a + b;
+
+
+      // FUNKTIO MULTIPLY
+      //Tavallinen funktio.
+      function multiply(a, b) {
+        return a * b;
+      }
+
+      //Sama nuolifunktiona.
+      const multiply2 = (a, b) => a * b;
+
+
+      // NELIÖN PINTA-ALA
+      //Käytetään tavallista funktiota.
+      function laskeNelionPintaala (sivunPituus) {
+        return sivunPituus * sivunPituus;
+      }
+
+      //Testataan funktiota.
+      console.log("Pinta-ala. Sivun pituus on 2:", laskeNelionPintaala(2));
+      console.log("Pinta-ala. Sivun pituus on 5:", laskeNelionPintaala(5));
+      console.log("Pinta-ala. Sivun pituus on 11:", laskeNelionPintaala(11));
+
+
+      // KOLMION PINTA-ALA
+      //Käytetään nuolifunktiota.
+      const laskeKolmionPintaala = (kannanPituus, korkeus) => {
+        return (kannanPituus * korkeus) / 2;
+      };
+
+      //Testataan funktiota.
+      console.log(laskeKolmionPintaala(2, 4));
+      console.log(laskeKolmionPintaala(4, 8));
+
+
+      // 06. MERKKIJONOT
+      // GETCHARCOUNT -FUNKTIO
+      //Täydennetään funktio
+      function getCharCount(str) {
+        return str.length;
+      }
+
+      //Oma funktio
+      function erotus(y, z) {
+        return y - z;
+      }
+
+      //Kutsutaan omaa funktiota
+      console.log(erotus(y, z));
+
+
+      // SHOUTMYNAME -FUNKTIO
+      //Muokataan funktiota
+      function shoutMyName(name) {
+        return name.toUpperCase();
+      }
+
+      //Oma funktio
+      function summa(x, v) {
+        return x + v;
+      }
+
+      //Kutsutaan omaa funktiota
+      console.log(summa(x, v));
+
+
+      //LOWERNAME -FUNKTIO
+      // Muokataan funktiota
+      function lowerName(name) {
+        return name.toLowerCase();
+      }
+
       
+
 
 
     </script>
