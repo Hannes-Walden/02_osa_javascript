@@ -311,22 +311,92 @@
       }
 
       //Oma funktio
-      function summa(x, v) {
-        return x + v;
+      function whisperMyName(name) {
+        return name.toLowerCase();
       }
 
       //Kutsutaan omaa funktiota
-      console.log(summa(x, v));
+      console.log(whisperMyName(name));
 
 
-      //LOWERNAME -FUNKTIO
-      // Muokataan funktiota
+      // LOWERNAME -FUNKTIO
+      //Muokataan funktiota
       function lowerName(name) {
         return name.toLowerCase();
       }
 
-      
+      //Oma funktio
+      function upperName(name) {
+        return name.toUpperCase();
+      }
 
+      //Kutsutaan omaa funktiota
+      console.log(upperName(name));
+
+
+      // GETFIRSTCHARACTER -FUNKTIO
+      //Funktio kutsuu ensimmäisen merkin.
+      function getFirstCharacter(name) {
+        return name[0];
+      }
+
+
+      // GETLASTCHARACTER -FUNKTIO
+      //Funktio palauttaa viimeisen merkin(käytetään charAt -metodia).
+      function getLastCharacter(name) {
+        return name.charAt(name.length - 1);
+      }
+
+
+      // SKIPFIRSTCHARACTER -FUNKTIO
+      //Otetaan merkkijonon ensimmäinen merkki pois.
+      function skipFirstCharacter(teksti) {
+        return teksti.slice(1);
+      }
+
+
+      // CONCATINITIALS -HARJOITUS
+      //Yhdistetään parametrit.
+      function concatInitials(firstNameInitial, lastNameInitial) {
+        return firstNameInitial + lastNameInitial;
+      }
+
+
+      // SAYHELLO -HARJOITUS
+      //muokataan funktio.
+      function sayHello(name) {
+        return `Hello, ${nimi}!`;
+      }
+
+      //Oma funktio.
+      function sayHi(name) {
+        return `Hi, ${Hannes}!`;
+      }
+
+      //Kutsutaan omaa funktiota.
+      console.log(sayHi('Hannes'));
+
+
+      // GETFULLNAME -FUNKTIO
+      //Muokataan funktiota.
+      function getFullName(firstName, lastName) {
+        return `${firstName} ${lastName}`;
+      }
+
+
+      // CAPITALIZE -FUNKTIO
+      function capitalize(word) {
+        return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+      }
+
+
+      //Oma funktio.
+      function minimalize(word) {
+        return word.charAt(0).toLowerCase() + word.slice(1).toLowerCase();
+      }
+
+      //Kutsutaan omaa funktiota.
+      console.log(minimalize('HANNES'));
 
 
     </script>
